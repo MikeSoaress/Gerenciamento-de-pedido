@@ -1,0 +1,31 @@
+.form-control:focus {
+    color: var(--cor-primaria)var(--cor);
+    background-color: var(--bs-body-bg);
+    border-color: var(--cor-primaria);
+    outline: 0;
+    box-shadow: none;
+}
+
+#card-login {
+    background-color: #ecf0f1;
+    height: 100vh !important;
+}
+
+#card-login-left {
+    color: white;
+    width: 40vw;
+    height: 80%;
+    background-color: var(--cor-primaria);
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+#card-login-right {
+    width: 40vw;
+    height: 80%;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+

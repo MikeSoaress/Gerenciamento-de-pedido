@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --cor-primaria: #df7171;      /* Azul principal */
+  }
+
+  .bg-primaria{
+    background-color: var(--cor-primaria);
+  }
+
+  .color-primaria{
+    color: var(--cor-primaria);
+  }
+
+  .botao-padrao {
+    background-color: var(--cor-primaria) !important;
+    color: white !important;
+}

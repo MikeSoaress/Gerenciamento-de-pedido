@@ -1,16 +1,21 @@
 :root {
-    --cor-primaria: #df7171;      /* Azul principal */
-  }
+  --cor-primaria: #df7171;
+  /* Azul principal */
+}
 
-  .bg-primaria{
-    background-color: var(--cor-primaria);
-  }
+.bg-primaria {
+  background-color: var(--cor-primaria);
+}
 
-  .color-primaria{
-    color: var(--cor-primaria);
-  }
+.color-primaria {
+  color: var(--cor-primaria);
+}
 
-  .botao-padrao {
-    background-color: var(--cor-primaria) !important;
-    color: white !important;
+.botao-padrao {
+  background-color: var(--cor-primaria) !important;
+  color: white !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

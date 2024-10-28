@@ -3,9 +3,9 @@
 }
 
 #menu-lateral{
-    width: 30%;
+    width: 18%;
+    max-width: 250px;
 }
 
 #container-pagina{
-    width: 70%;
 }

@@ -4,7 +4,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { FuncionariosComponent } from './pages/funcionarios/funcionarios.component';
 
 const routes: Routes = [
-  { path: '', component: LoginComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'funcionarios', component: FuncionariosComponent },
 ];
 

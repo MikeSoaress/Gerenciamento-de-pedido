@@ -1,29 +1,40 @@
-<div id="container-principal">
-    <button class="item-menu">
-        <img class="icone-menu" src="/assets/images/equipe.png">
-        <span>Funcionarios</span>
-    </button>
-    <div id="menu_completo_1">
-        <button name="menu" class="item-menu-colapse" (click)="alternaSubMenu('menu_completo_1')">
-            <div>
-                <img  class="icone-menu" src="/assets/images/cardapio.png">
-                <span class="legenda">Cardápio</span>
-            </div>
-            <div>
-                <img name="icone_menu" class="icone-seta" src="/assets/images/seta-direita.png">
-            </div>
+<div id="container-menu" class="menu-on">
+    <div id="container-alterna-menu">
+        <img id="icone-alterna-menu" class="mb-2 " src="/assets/images/menu.png" (click)="alternaMenu()">
+    </div>
+    <div id="menu-ocultavel">
+        <div class="text-center mb-4 mt-3">
+            <img id="imagem-usuario" class="mb-2" src="/assets/images/IMG_USUARIO.png"><br>
+            <span>Olá, Mike</span><br>
+            <span id="btn-sair">Sair</span>
+        </div>
+        <hr>
+        <button class="item-menu">
+            <img class="icone-menu" src="/assets/images/equipe.png">
+            <span>Funcionarios</span>
         </button>
-        <div name="submenu" class="sub-menu-off">
-            <div class="item-menu">
-                <span>Produtos</span>
-            </div>
-            <div class="item-menu">
-                <span>Categorias</span>
+        <div id="menu_completo_1">
+            <button name="menu" class="item-menu-colapse" (click)="alternaSubMenu('menu_completo_1')">
+                <div>
+                    <img class="icone-menu" src="/assets/images/cardapio.png">
+                    <span class="legenda">Cardápio</span>
+                </div>
+                <div>
+                    <img name="icone_menu" class="icone-seta" src="/assets/images/seta-direita.png">
+                </div>
+            </button>
+            <div name="submenu" class="sub-menu-off">
+                <div class="item-menu">
+                    <span>Produtos</span>
+                </div>
+                <div class="item-menu">
+                    <span>Categorias</span>
+                </div>
             </div>
         </div>
+        <button class="item-menu">
+            <img class="icone-menu" src="/assets/images/equipe.png">
+            <span>Financeiro</span>
+        </button>
     </div>
-    <button class="item-menu">
-        <img class="icone-menu" src="/assets/images/equipe.png">
-        <span>Financeiro</span>
-    </button>
 </div>

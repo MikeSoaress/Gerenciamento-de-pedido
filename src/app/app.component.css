@@ -2,10 +2,10 @@
     display: flex;
 }
 
-#menu-lateral{
-    width: 18%;
-    max-width: 250px;
+#container-pagina{
+    width: 100%;
 }
 
-#container-pagina{
+.ocultar{
+    display: none;
 }

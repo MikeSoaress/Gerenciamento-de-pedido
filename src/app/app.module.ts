@@ -7,6 +7,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FuncionariosComponent } from './pages/funcionarios/funcionarios.component';
 import { MenuLateralComponent } from './components/menu-lateral/menu-lateral.component';
+import { CarregandoComponent } from './components/carregando/carregando.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MenuLateralComponent } from './components/menu-lateral/menu-lateral.com
     LoginComponent,
     FooterComponent,
     FuncionariosComponent,
-    MenuLateralComponent
+    MenuLateralComponent,
+    CarregandoComponent
   ],
   imports: [
     BrowserModule,

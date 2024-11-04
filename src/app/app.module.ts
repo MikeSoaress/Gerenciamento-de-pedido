@@ -8,6 +8,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FuncionariosComponent } from './pages/funcionarios/funcionarios.component';
 import { MenuLateralComponent } from './components/menu-lateral/menu-lateral.component';
 import { CarregandoComponent } from './components/carregando/carregando.component';
+import { AvisoComponent } from './components/aviso/aviso.component';
+import { ConfirmacaoComponent } from './components/confirmacao/confirmacao.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CarregandoComponent } from './components/carregando/carregando.componen
     FooterComponent,
     FuncionariosComponent,
     MenuLateralComponent,
-    CarregandoComponent
+    CarregandoComponent,
+    AvisoComponent,
+    ConfirmacaoComponent
   ],
   imports: [
     BrowserModule,

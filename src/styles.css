@@ -19,3 +19,13 @@
 .cursor-pointer {
   cursor: pointer;
 }
+
+.centraliza{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ml-1{
+  margin-left: 1rem;
+}

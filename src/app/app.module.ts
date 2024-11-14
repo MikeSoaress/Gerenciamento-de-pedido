@@ -10,6 +10,7 @@ import { CarregandoComponent } from './components/carregando/carregando.componen
 import { AvisoComponent } from './components/aviso/aviso.component';
 import { ConfirmacaoComponent } from './components/confirmacao/confirmacao.component';
 import { UsuarioComponent } from './pages/usuario/usuario.component';
+import { AdicionarUsuarioComponent } from './adicionar-usuario/adicionar-usuario.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { UsuarioComponent } from './pages/usuario/usuario.component';
     CarregandoComponent,
     AvisoComponent,
     ConfirmacaoComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    AdicionarUsuarioComponent
   ],
   imports: [
     BrowserModule,

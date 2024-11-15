@@ -1,0 +1,23 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "username": "admin",
+        "password": "123456",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.admin"
+      },
+      {
+        "id": 2,
+        "username": "user1",
+        "password": "password123",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.user1"
+      },
+      {
+        "id": 3,
+        "username": "user2",
+        "password": "qwerty",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.user2"
+      }
+    ]
+  }
+  

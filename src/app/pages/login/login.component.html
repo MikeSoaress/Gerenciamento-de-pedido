@@ -6,14 +6,13 @@
         </div>
     </div>
 
-
     <div id="card-login-right" class="d-flex justify-content-center align-items-center">
         <div>
             <h3 class="mb-4 color-primaria">Acesse a plataforma</h3>
-            <input class="form-control" type="text" placeholder="Login">
-            <input class="form-control mt-2" type="text" placeholder="Senha">
+            <input class="form-control"  [(ngModel)]="username" type="text" placeholder="Login">
+            <input class="form-control mt-2" [(ngModel)]="password" type="text" placeholder="Senha">
             <div class="text-center mt-2">
-                <button class="btn  text-center botao-padrao">Entrar</button>
+                <button class="btn  text-center botao-padrao" (click)="login()">Entrar</button>
             </div>
         </div>
     </div>

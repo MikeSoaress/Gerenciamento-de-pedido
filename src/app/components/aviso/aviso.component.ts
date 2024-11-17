@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-aviso',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./aviso.component.css']
 })
 export class AvisoComponent implements OnInit {
-
   constructor() { }
+  @Input() mensagem: string = '';
+  @Output() actionBtnOk = new EventEmitter<void>();
 
   ngOnInit(): void {
+  }
+
+  btnOkClick() {
+    this.actionBtnOk.emit();
   }
 
 }

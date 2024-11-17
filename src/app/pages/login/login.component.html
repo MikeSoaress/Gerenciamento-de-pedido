@@ -1,3 +1,6 @@
+<div *ngIf="textoDeAviso">
+    <app-aviso [mensagem]="textoDeAviso" (actionBtnOk)="ocultarAviso()"></app-aviso>
+</div>
 <div id="card-login" class="d-flex justify-content-center align-items-center">
     <div id="card-login-left" class="d-flex justify-content-center align-items-center">
         <div class="text-center">
@@ -9,7 +12,7 @@
     <div id="card-login-right" class="d-flex justify-content-center align-items-center">
         <div>
             <h3 class="mb-4 color-primaria">Acesse a plataforma</h3>
-            <input class="form-control"  [(ngModel)]="username" type="text" placeholder="Login">
+            <input class="form-control" [(ngModel)]="username" type="text" placeholder="Login">
             <input class="form-control mt-2" [(ngModel)]="password" type="text" placeholder="Senha">
             <div class="text-center mt-2">
                 <button class="btn  text-center botao-padrao" (click)="login()">Entrar</button>

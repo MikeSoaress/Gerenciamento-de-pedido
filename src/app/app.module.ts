@@ -10,8 +10,9 @@ import { CarregandoComponent } from './components/carregando/carregando.componen
 import { AvisoComponent } from './components/aviso/aviso.component';
 import { ConfirmacaoComponent } from './components/confirmacao/confirmacao.component';
 import { UsuarioComponent } from './pages/usuario/usuario.component';
-import { AdicionarUsuarioComponent } from './adicionar-usuario/adicionar-usuario.component';
+import { AdicionarUsuarioComponent } from './pages/adicionar-usuario/adicionar-usuario.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule  
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu-lateral',
@@ -7,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuLateralComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  public alternaSubMenu(id: string): void {
+  alternaSubMenu(id: string): void {
     var container_menu = document.getElementById(id);
     var elemento_menu = container_menu?.querySelector('[name="menu"]');
     var elemento_submenu = container_menu?.querySelector('[name="submenu"]');
@@ -35,7 +36,7 @@ export class MenuLateralComponent implements OnInit {
     }
   }
 
-  public alternaMenu(): void {
+  alternaMenu(): void {
     var elementos_menu = document.getElementById('menu-ocultavel');
     var base_menu = document.getElementById('container-menu');
     var menu_ativo: boolean = elementos_menu?.classList.contains('ocultar') ? false : true;
@@ -55,6 +56,10 @@ export class MenuLateralComponent implements OnInit {
       base_menu?.classList.add('menu-off');
       elementos_menu?.classList.add('ocultar');
     }
+  }
+
+  btnSairClick(){
+    this.router.navigate(['/login']);
   }
 }
 

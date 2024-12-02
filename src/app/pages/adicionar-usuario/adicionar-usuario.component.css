@@ -63,3 +63,8 @@ label {
     pointer-events: none;
     transition: max-height 0.09s ease, opacity 0.07s ease;
 }
+
+#titulo{
+    margin-bottom: 2rem;
+    color: #25282f;
+}

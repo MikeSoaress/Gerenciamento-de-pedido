@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener  } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
 import { Router } from '@angular/router';
+import { DeviceService } from 'src/app/services/device.service';
 
 @Component({
   selector: 'app-login',
@@ -14,16 +15,16 @@ export class LoginComponent implements OnInit {
   textoDeAviso: string = '';
   acessoMobile: boolean = false;
 
-  constructor(private router: Router, private authService: AuthService) { }
+  constructor(private router: Router, private authService: AuthService, private deviceService: DeviceService) { }
 
   ngOnInit(): void {
-    this.verificarDispositivo();
+    this.acessoMobile = this.deviceService.isMobile();
     this.authService.logout();
   }
 
   @HostListener('window:resize')
   onResize() {
-    this.verificarDispositivo();
+    this.acessoMobile = this.deviceService.isMobile();
   }
 
   login() {
@@ -56,8 +57,5 @@ export class LoginComponent implements OnInit {
     return this.username != '' && this.password != '' ? true : false;
   }
 
-  private verificarDispositivo() {
-    this.acessoMobile = window.innerWidth < 768;
-  }
 
 }
